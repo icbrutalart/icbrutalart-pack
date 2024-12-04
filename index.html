@@ -134,6 +134,31 @@
         .lightbox:target {
             display: flex;
         }
+        <style>
+    /* Existing CSS rules */
+
+    /* Close Button Styles */
+    .lightbox .close-button {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: #ffffff;
+        background: rgba(0, 0, 0, 0.7);
+        font-size: 2rem;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 50%;
+        z-index: 1001;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .lightbox .close-button:hover {
+        background: rgba(255, 255, 255, 0.9);
+        color: #121212;
+        transform: scale(1.1);
+    }
+</style>
+
     </style>
 </head>
 <body>
@@ -181,26 +206,32 @@
 
 <!-- Lightbox Elements with Descriptions -->
 <div id="img1" class="lightbox">
+    <a href="#" class="close-button">&times;</a>
     <img src="2.jpg" alt="Cover Design">
     <p class="description">cover art and design comes with separeated ellemnts for visualizer video or more media and physical product.</p>
 </div>
 <div id="img2" class="lightbox">
+    <a href="#" class="close-button">&times;</a>
     <img src="3.jpg" alt="Merch Design">
     <p class="description">Unique T-shirt merchandise designs to complement your album.</p>
 </div>
 <div id="img3" class="lightbox">
+    <a href="#" class="close-button">&times;</a>
     <img src="4.jpg" alt="Physical Media Design">
     <p class="description">CD and cassette packaging designed and patch-sticker design for your physical release.</p>
 </div>
 <div id="img4" class="lightbox">
+    <a href="#" class="close-button">&times;</a>
     <img src="5.jpg" alt="Bonus Image 1">
     <p class="description">you will get a full orginized file with the resources for any adjustment .</p>
 </div>
 <div id="img5" class="lightbox">
+    <a href="#" class="close-button">&times;</a>
     <img src="6.jpg" alt="Bonus Image 2">
     <p class="description">the procces of Handcrafting this artwork, that was inspired from a nightmare ive had,xD .</p>
 </div>
 <div id="img6" class="lightbox">
+    <a href="#" class="close-button">&times;</a>
     <img src="7.jpg" alt="Cover Design">
     <p class="description">extra version of the artwork for printing materiel or promotional needs.</p>
 </div>
